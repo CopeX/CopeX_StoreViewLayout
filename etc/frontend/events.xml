@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--
+  ~ Copyright (c) 2021.  Roman Hutterer CopeX GmbH | https://copex.io | <roman.hutterer@copex.io>
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="layout_load_before">
+        <observer name="copex_storeviewlayout_observer_frontend_load_layout_before"
+                  instance="CopeX\StoreViewLayout\Observer\Frontend\Load\LayoutBefore"/>
+    </event>
+</config>
